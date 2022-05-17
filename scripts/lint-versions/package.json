@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "public": true,
     "description": "Lint versions for web component monorepos.",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },

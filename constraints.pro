@@ -31,7 +31,7 @@ gen_enforced_dependency(WorkspaceCwd, 'tslib', DependencyRange2, DependencyType)
   % Ignores the case when TypeScript is a peer dependency
     DependencyType \= 'peerDependencies',
   % Fetch the version from root
-    workspace_has_dependency('unified-experience-components', 'tslib', DependencyRange2, _),
+    workspace_has_dependency('monorepo-tooling-scripts', 'tslib', DependencyRange2, _),
   % Only proceed if the workspace doesn't already depend on tslib
     \+ workspace_has_dependency(WorkspaceCwd, 'tslib', _, _).
 
@@ -39,4 +39,4 @@ gen_enforced_dependency(WorkspaceCwd, 'tslib', DependencyRange2, DependencyType)
 % PACKAGE SETTINGS
 
 % Ensure all packages include a license field
-gen_enforced_field(WorkspaceCwd, 'license', 'Apache-2.0').
+gen_enforced_field(WorkspaceCwd, 'license', 'Apache 2.0').

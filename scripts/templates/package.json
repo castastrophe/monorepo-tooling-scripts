@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "private": true,
     "description": "Templates for generating a package for a web components monorepo.",
-    "license": "Apache-2.0",
+    "license": "MIT",
     "author": "castastrophe",
     "main": "plopfile.js",
     "module": "plopfile.js",

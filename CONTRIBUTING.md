@@ -6,18 +6,12 @@ The following are a set of guidelines to follow when contributing to this projec
 
 ## Code Of Conduct
 
-This project adheres to the Adobe [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+This project adheres to the [code of conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
 
 ## Have a question?
 
 Start by filing an issue. The existing committers on this project work to reach consensus around project direction and issue solutions
 within issue threads (when appropriate).
-
-## Contributor License Agreement
-
-All third-party contributions to this project must be accompanied by a signed contributor license agreement. This gives Adobe permission to
-redistribute your contributions as part of the project. [Sign our CLA](http://opensource.adobe.com/cla.html). You only need to submit an
-Adobe CLA one time, so if you have submitted one previously, you are good to go!
 
 ## Code Reviews
 
