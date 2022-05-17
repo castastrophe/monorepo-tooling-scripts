@@ -1,0 +1,7 @@
+fix:
+    type: boolean
+    default: false
+verbose:
+    alias: v
+    type: boolean
+    default: false

@@ -1,0 +1,7 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Only enforce the commit syntax on the main branch
+if [[ $(git rev-parse --abbrev-ref HEAD) = main ]]; then
+    yarn commitlint --config commitlint.config.cjs --edit $1
+fi

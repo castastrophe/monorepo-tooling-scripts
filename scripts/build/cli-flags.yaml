@@ -1,0 +1,52 @@
+build:
+    alias: b
+    type: boolean
+    default: true
+    describe: Build the project
+test:
+    alias: t
+    type: boolean
+    default: false
+    describe: Whether or not to include test assets
+preview:
+    alias: p
+    type: boolean
+    default: true
+    describe: Whether or not to include storybook assets
+swc:
+    type: boolean
+    default: true
+    describe: 'Wrap output with spectrum web component [default: true]'
+map:
+    type: boolean
+    default: true
+    describe: Build with sourcemaps
+bundle:
+    type: boolean
+    default: false
+    hidden: true
+watch:
+    alias: w
+    type: boolean
+    default: false
+    describe: Watch for changes and rebuild
+clean:
+    alias: c
+    type: boolean
+    default: false
+    describe: Clean before building
+verbose:
+    alias: v
+    type: boolean
+    default: false
+    describe: Print verbose messaging
+quiet:
+    alias: q
+    type: boolean
+    conflicts:
+        - verbose
+debug:
+    type: boolean
+    default: false
+    implies:
+        - verbose

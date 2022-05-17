@@ -1,0 +1,20 @@
+{
+    "root": true,
+    "plugins": ["notice", "import"],
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-debugger": 2,
+        "import/extensions": ["error", "ignorePackages", { "ts": "never" }],
+        "import/prefer-default-export": "off"
+    },
+    "extends": ["prettier"]
+}

@@ -1,0 +1,55 @@
+{
+    "name": "scripts-utilities",
+    "version": "0.0.1",
+    "public": true,
+    "description": "Utilities for the scripts supporting web component monorepos.",
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@git.corp.adobe.com:castastrophe/monorepo-tooling-scripts.git",
+        "directory": "scripts/utilities"
+    },
+    "author": "castastrophe",
+    "bugs": {
+        "url": "https://github.com/castastrophe/monorepo-tooling-scripts/issues"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=14.0.0 || >=16.0.0",
+        "yarn": ">=3.2.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "monorepo",
+        "tooling",
+        "esbuild",
+        "lit"
+    ],
+    "devDependencies": {
+        "@types/node": "^17.0.34",
+        "@types/yargs": "^17.0.10",
+        "chalk": "^5.0.1",
+        "fast-glob": "^3.2.11",
+        "scripts-utilities": "workspace:^",
+        "ts-node": "^10.7.0",
+        "tslib": "^2.4.0",
+        "typescript": "4.6.4",
+        "yargs": "^17.5.1"
+    },
+    "contributors": [
+        {
+            "name": "castastrophe",
+            "email": "castastrophe@users.noreply.github.com",
+            "url": "https://github.com/castastrophe"
+        },
+        {
+            "name": "wesjohns"
+        }
+    ],
+    "packageManager": "yarn@3.2.1"
+}

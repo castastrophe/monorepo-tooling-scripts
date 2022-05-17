@@ -1,0 +1,71 @@
+{
+    "name": "monorepo-tooling-scripts",
+    "version": "0.0.1",
+    "public": true,
+    "description": "A collection of scripts to facilitate management of a web components monorepo.",
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@git.corp.adobe.com:castastrophe/monorepo-tooling-scripts.git"
+    },
+    "author": "castastrophe",
+    "bugs": {
+        "url": "https://github.com/castastrophe/monorepo-tooling-scripts/issues"
+    },
+    "type": "module",
+    "engines": {
+        "node": ">=14.0.0 || >=16.0.0",
+        "yarn": ">=3.2.0"
+    },
+    "scripts": {
+        "add:dep": "ts-node-esm ./scripts/add-dep.ts",
+        "build": "rimraf ./scripts/*.{js,js.map} ./scripts/*/*.{js,js.map} && ts-node-esm ./scripts/build.ts ./scripts/*.ts ./scripts/**/*.ts --outdir ./scripts/ --extension .cjs",
+        "get-ready": "yarn build:clean",
+        "lint": "run-p lint:ts lint:css:fix lint:packagejson",
+        "new": "yarn workspace templating new",
+        "postinstall": "yarn constraints --fix",
+        "prepare": "husky install",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "monorepo",
+        "tooling",
+        "esbuild",
+        "lit"
+    ],
+    "devDependencies": {
+        "@types/node": "^17.0.34",
+        "@types/node-fetch": "^2.6.1",
+        "@types/rimraf": "^3.0.2",
+        "husky": "^8.0.1",
+        "prettier": "^2.6.2",
+        "prettier-plugin-package": "^1.3.0",
+        "pretty-quick": "^3.1.3",
+        "rimraf": "^3.0.2",
+        "ts-node": "^10.7.0",
+        "tslib": "^2.4.0",
+        "typescript": "4.6.4"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 11"
+    ],
+    "contributors": [
+        {
+            "name": "castastrophe",
+            "email": "castastrophe@users.noreply.github.com",
+            "url": "https://github.com/castastrophe"
+        },
+        {
+            "name": "wesjohns"
+        }
+    ],
+    "packageManager": "yarn@3.2.1",
+    "workspaces": [
+        "scripts/*"
+    ]
+}

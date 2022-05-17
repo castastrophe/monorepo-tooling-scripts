@@ -1,0 +1,15 @@
+dependency:
+    alias: d
+    type: boolean
+    describe: Add as dependency
+    conflicts:
+        - devDependency
+devDependency:
+    alias: D
+    type: boolean
+    default: true
+    describe: Add as devDependency
+verbose:
+    alias: v
+    type: boolean
+    default: false

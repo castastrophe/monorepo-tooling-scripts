@@ -1,0 +1,61 @@
+*           text=auto
+*.txt		text
+*.vcproj	text eol=crlf
+*.sh		text eol=lf
+*.jpg		-text
+
+*.md            text diff=markdown
+
+*.css             text diff=css
+*.htm             text diff=html
+*.html            text diff=html
+
+*.ts              text
+*.js              text
+*.json            text
+*.yaml            text
+
+*.map             text -diff
+
+AUTHORS           text
+CHANGELOG         text
+CHANGES           text
+CONTRIBUTING      text
+LICENSE           text
+*README*          text
+TODO              text
+
+*.hbs             text
+
+*.config          text
+.editorconfig     text
+.env              text
+.gitattributes    text
+.gitconfig        text
+*.lock            text -diff
+package.json      text eol=lf
+package-lock.json text -diff
+pnpm-lock.yaml    text eol=lf -diff
+.prettierrc       text
+yarn.lock         text -diff
+
+# Graphics
+*.svg             text
+*.gif             binary
+*.ico             binary
+*.jpg             binary
+*.jpeg            binary
+*.pdf             binary
+*.png             binary
+*.psd             binary
+*.webp            binary
+
+# Fonts
+*.ttf             binary
+*.eot             binary
+*.otf             binary
+*.woff            binary
+*.woff2           binary
+
+# Ignore files (like .npmignore or .gitignore)
+*.*ignore         text

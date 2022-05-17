@@ -1,0 +1,5 @@
+node_modules
+
+**/*.hbs
+**/*.d.ts
+**/*.js
