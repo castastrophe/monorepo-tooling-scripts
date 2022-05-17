@@ -3,13 +3,13 @@
     "version": "0.0.1",
     "public": true,
     "description": "A collection of scripts to facilitate management of a web components monorepo.",
-    "license": "Apache-2.0",
+    "license": "Apache 2.0",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
     "repository": {
         "type": "git",
-        "url": "git@git.corp.adobe.com:castastrophe/monorepo-tooling-scripts.git"
+        "url": "git@github.com:castastrophe/monorepo-tooling-scripts.git"
     },
     "author": "castastrophe",
     "bugs": {

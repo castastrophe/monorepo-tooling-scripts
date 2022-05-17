@@ -9,7 +9,7 @@ assignee: castastrophe
 <!-- Thank you for taking the time to fill out this bug report! -->
 
 By submitting this issue, you agree to follow our
-[code of conduct](/blob/main/CODE_OF_CONDUCT.md#adobe-code-of-conduct).
+[code of conduct](/blob/main/CODE_OF_CONDUCT.md).
 
 -   [] I agree to follow this project's code of conduct.
 
